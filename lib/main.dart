@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
                                       "https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png")),
                             ),
                             Text(
-                              "Github",
+                              "https://github.com/webianks",
                               style: TextStyle(color: Colors.white70),
                             ),
                           ],
@@ -97,7 +97,7 @@ class MyApp extends StatelessWidget {
                                         "https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png")),
                               ),
                               Text(
-                                "LinkedIn",
+                                "https://www.linkedin.com/in/ramankit-singh-b7b09493/",
                                 style: TextStyle(color: Colors.white70),
                               ),
                             ],
@@ -123,7 +123,7 @@ class MyApp extends StatelessWidget {
                                         "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png")),
                               ),
                               Text(
-                                "Twitter",
+                                "https://twitter.com/webianks",
                                 style: TextStyle(color: Colors.white70),
                               ),
                             ],
