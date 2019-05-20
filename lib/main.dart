@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         home: Container(
           height: double.infinity,
           width: double.infinity,
-          color: Colors.black87,
+          color: Colors.black,
           child: Align(
             alignment: Alignment.topCenter,
             child: Container(
@@ -47,31 +47,91 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Raleway',
                       fontSize: 15.0,
                       decoration: TextDecoration.none,
-                      color: Colors.grey,
+                      color: Colors.grey[300],
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: OutlineButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(4.0)),
-                          side: BorderSide(
-                            color: Colors.white, //Color of the border
-                            style: BorderStyle.solid, //Style of the border
-                            width: 1,
-                          )),
-                        color: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "On the way !",
-                        style: TextStyle(
-                          fontFamily: 'Raleway',
-                          fontSize: 15.0,
-                          color: Colors.purple[300],
-                          decoration: TextDecoration.none,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      OutlineButton(
+                       borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0)),
+                        onPressed: () {},
+                        child: Row(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image(
+                                  height: 20.0,
+                                  width: 20.0,
+                                  image: NetworkImage(
+                                      "https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png")),
+                            ),
+                            Text(
+                              "Github",
+                              style: TextStyle(color: Colors.white70),
+                            ),
+                          ],
                         ),
-                      )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: OutlineButton(
+                          borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0)),
+                          onPressed: () {},
+                          
+                          child: Row(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image(
+                                    height: 25.0,
+                                    width: 25.0,
+                                    image: NetworkImage(
+                                        "https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png")),
+                              ),
+                              Text(
+                                "LinkedIn",
+                                style: TextStyle(color: Colors.white70),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: OutlineButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                          onPressed: () {},
+                          child: Row(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image(
+                                    height: 25.0,
+                                    width: 25.0,
+                                    image: NetworkImage(
+                                        "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png")),
+                              ),
+                              Text(
+                                "Twitter",
+                                style: TextStyle(color: Colors.white70),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ]),
             ),
