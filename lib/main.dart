@@ -51,13 +51,38 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                FlatButton(
+
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0)),
+                  onPressed: () {},
+                  color: Colors.white,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image(
+                            height: 25.0,
+                            width: 25.0,
+                            image: NetworkImage(
+                                "https://image.flaticon.com/icons/png/512/27/27630.png")),
+                      ),
+                      Text(
+                        "webianks@gmail.com",
+                        style: TextStyle(color: Colors.black87),
+                      ),
+                    ],
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       OutlineButton(
-                       borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                        borderSide:
+                            BorderSide(color: Colors.white70, width: 0.1),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0)),
                         onPressed: () {},
@@ -72,7 +97,7 @@ class MyApp extends StatelessWidget {
                                       "https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png")),
                             ),
                             Text(
-                              "https://github.com/webianks",
+                              "Github",
                               style: TextStyle(color: Colors.white70),
                             ),
                           ],
@@ -81,11 +106,11 @@ class MyApp extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(left: 8.0),
                         child: OutlineButton(
-                          borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                          borderSide:
+                              BorderSide(color: Colors.white70, width: 0.1),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0)),
                           onPressed: () {},
-                          
                           child: Row(
                             children: <Widget>[
                               Padding(
@@ -97,7 +122,7 @@ class MyApp extends StatelessWidget {
                                         "https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png")),
                               ),
                               Text(
-                                "https://www.linkedin.com/in/ramankit-singh-b7b09493/",
+                                "LinkedIn",
                                 style: TextStyle(color: Colors.white70),
                               ),
                             ],
@@ -110,7 +135,8 @@ class MyApp extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                           ),
-                          borderSide: BorderSide(color: Colors.white70,width: 0.1),
+                          borderSide:
+                              BorderSide(color: Colors.white70, width: 0.1),
                           onPressed: () {},
                           child: Row(
                             children: <Widget>[
@@ -123,7 +149,7 @@ class MyApp extends StatelessWidget {
                                         "http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png")),
                               ),
                               Text(
-                                "https://twitter.com/webianks",
+                                "Twitter",
                                 style: TextStyle(color: Colors.white70),
                               ),
                             ],
