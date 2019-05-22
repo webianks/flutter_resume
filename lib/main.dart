@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                FlatButton(
+                /* FlatButton(
 
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0)),
@@ -70,11 +70,11 @@ class MyApp extends StatelessWidget {
                       ),
                       Text(
                         "webianks@gmail.com",
-                        style: TextStyle(color: Colors.black87),
+                        style: TextStyle(color: Colors.black),
                       ),
                     ],
                   ),
-                ),
+                ), */
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
@@ -155,13 +155,101 @@ class MyApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
+                _getStaquCard(),
+                _getBadiyaJobsCard()
               ]),
             ),
           ),
         ));
   }
+
+  Widget _getStaquCard() {
+    return Padding(
+      padding: const EdgeInsets.only(top: 20.0),
+      child: Card(
+        color: Colors.white10,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(
+              top: 12.0, left: 70.0, right: 70.0, bottom: 12.0),
+          child: Column(children: [
+            /* Text("Experience",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                  fontSize: 20.0,
+                  decoration: TextDecoration.none,
+                  color: Colors.grey[700],
+                )), */
+            Text("Android Developer",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                  fontSize: 20.0,
+                  decoration: TextDecoration.none,
+                  color: Colors.white,
+                )),
+            Text("at Staqu Technologies",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                  fontSize: 15.0,
+                  decoration: TextDecoration.none,
+                  color: Colors.pink,
+                )),
+          ]),
+        ),
+      ),
+    );
+  }
+
+  Widget _getBadiyaJobsCard() {
+      return Padding(
+        padding: const EdgeInsets.only(top: 20.0),
+        child: Card(
+          color: Colors.black,
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: Colors.white),
+            borderRadius: BorderRadius.circular(12.0),
+           
+          ),
+          child: Padding(
+            padding: const EdgeInsets.only(
+                top: 12.0, left: 70.0, right: 70.0, bottom: 12.0),
+            child: Column(children: [
+              /* Text("Experience",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                  fontSize: 20.0,
+                  decoration: TextDecoration.none,
+                  color: Colors.grey[700],
+                )), */
+              Text("Android Developement Intern",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontFamily: 'Raleway',
+                    fontSize: 20.0,
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                  )),
+              Text("at Badiyajobs.com",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontFamily: 'Raleway',
+                    fontSize: 15.0,
+                    decoration: TextDecoration.none,
+                    color: Colors.pinkAccent,
+                  )),
+            ]),
+          ),
+        ),
+      );
+    }
 }
