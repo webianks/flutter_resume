@@ -171,9 +171,10 @@ class MyApp extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20.0),
       child: Card(
-        color: Colors.white10,
+        color: Colors.black,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.0),
+          borderRadius: BorderRadius.circular(15.0),
+          side: BorderSide(width: 5,color: Colors.white10)
         ),
         child: Padding(
           padding: const EdgeInsets.only(
@@ -192,6 +193,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Raleway',
                   fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                   decoration: TextDecoration.none,
                   color: Colors.white,
                 )),
@@ -235,7 +237,7 @@ class MyApp extends StatelessWidget {
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     fontFamily: 'Raleway',
-                    fontSize: 20.0,
+                    fontSize: 19.0,
                     decoration: TextDecoration.none,
                     color: Colors.white,
                   )),
@@ -243,7 +245,7 @@ class MyApp extends StatelessWidget {
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     fontFamily: 'Raleway',
-                    fontSize: 15.0,
+                    fontSize: 14.0,
                     decoration: TextDecoration.none,
                     color: Colors.pinkAccent,
                   )),
